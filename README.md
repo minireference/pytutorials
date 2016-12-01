@@ -20,7 +20,7 @@ Running
 
 Session 1
 ---------
-  - Python basics: <python-bigdata/intro-python.ipynb>
+  - Python basics: [python-bigdata/intro-python.ipynb](python-bigdata/intro-python.ipynb)
   - Command line demo
 
 
