@@ -20,8 +20,10 @@ Running
 
 Session 1
 ---------
-  - Python basics: [python-bigdata/intro-python.ipynb](python-bigdata/intro-python.ipynb)
+  - Python basics: [python-bigdata/intro-python.ipynb](python-bigdata/intro-python.ipynb)  
+    also [Scipy-Bordeaux-2016/introduction.md](Scipy-Bordeaux-2016/introduction.md)
   - Command line demo
+
 
 
 Session 2
@@ -34,5 +36,6 @@ Session 2
 Session 3
 ---------
   - Web scraping with `requests` and `lxml`
+
 
 
