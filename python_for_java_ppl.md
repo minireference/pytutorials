@@ -10,7 +10,7 @@ languages like Java and shows some examples of Python coolness.
 
 The `bool`ean constants are `True` and `False`.
 Strings are strings (can use both single or double quotes to denote),
-flaots are `float`s, and `int`s (grow as needed).
+floats are `float`s, and integers are `int`s (but are not fixed size).
 
     s = 'le string'   # can also use "le string"
     f = 1.2
@@ -22,7 +22,7 @@ There is also a native complex number type, should a need arise.
 Tuples and Lists
 ----------------
 Python syntax sometimes uses `tuple`-syntax which is any expression
-separated by commas. Here is an assigment of 3 to `i` and 4 to `j` using tuple notation:
+separated by commas. Here is an assignment of 3 to `i` and 4 to `j` using tuple notation:
 
     i, j = 3, 4
 
@@ -33,7 +33,7 @@ Tuples are denoted with brackets:
 
 Lists are denoted with square brackets `[3,4]` and can contain a mix of different objects `mylist = ['le string', 3, 4]`.
 
-We use 0-based-indexing and square brackets to access tupel and list elements, e.g. `mylist[0]` will return `'le string'`.
+We use 0-based-indexing and square brackets to access tuple and list elements, e.g. `mylist[0]` will return `'le string'`.
 
 Note: Python is forgiving about extra trailing commas in lists and tuples `[3,4,]==[3,4]` and `(3,4,)==(3,4)`.
 
@@ -72,9 +72,9 @@ with an index `i` varying over a range of values you must use the `range` functi
 Dict comprehension
 ------------------
 In order to iterate over all the contents of a dictionary,
-use the dictionary's `iteritems` method:
+use the dictionary's `items` method:
 
-    for key, value in d.iteritems():
+    for key, value in d.items():
         print key
         print value
 
@@ -86,23 +86,23 @@ If ordering is important consider using an `OrderedDict` which can be `import`ed
 
 Magic methods
 -------------
-Every python object has some important "magin methods",
+Every python object has some important "magic methods",
 which by convention are denoted surrounded by double underscores.
 The most useful of these is the `__dict__` method which forces the
-object to represent itself as a dictionary: the obects attributes,
+object to represent itself as a dictionary: the objects attributes,
 and methods become the keys, and the values are the values of the 
 attributes or the output of `repr`.
 
 For people used to "looking around" in objects as in JavaScript,
-the `__dict__` method wil prove to be invaluable.
+the `__dict__` method will prove to be invaluable.
 
-Debuggin example, say you're learning how to use a django generic `ListView`,
+Debugging example, say you're learning how to use a django generic `ListView`,
 and after some error pages you've got a template in place and now you need
 to figure out how what you can work with. The API says `get_queryset` cannot
 take any arguments, but what do we have on self?  Know thyself they say:
 
-    class SupportTaskList(ListView):
-        template_name = 'support/support_task_list.html'
+    class TaskList(ListView):
+        template_name = 'task_list.html'
         def get_queryset(self):
             print self.__dict__   # looking around in completely unknown land...
 
