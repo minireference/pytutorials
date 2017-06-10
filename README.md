@@ -5,8 +5,8 @@ A collection of useful Python tutorials for beginners.
 Install
 -------
 
-    virtualenv pydev
-    source pydev/bin/activate
+    virtualenv -p python3  venv
+    source vend/bin/activate
     pip install -r requirements.txt
 
 
