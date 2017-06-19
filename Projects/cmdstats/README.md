@@ -26,3 +26,10 @@ Numeric questions:
 
   - What is the probability of the command `git`?
 
+
+Bonus points
+
+  - Download data.csv using python:
+    https://gist.githubusercontent.com/jvns/def5fbea05f58c0645cd/raw/d19d12570b0ecf6640a487e97443ce4b68d7b4b7/top_200_ish_commands.csv
+
+
